@@ -57,7 +57,13 @@ import userBlockRoutes from './routes/app/userBlockRoutes';
 const NAMESPACE = 'Server';
 const router = express();
 
+const corsOptions = {
+  origin: 'https://matrimony-theta.vercel.app',
+};
+
 router.use(cors());
+
+router.use(cors(corsOptions));
 
 /** Logging the request */
 router.use((req, res, next) => {
