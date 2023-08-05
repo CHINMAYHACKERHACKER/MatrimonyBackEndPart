@@ -4,7 +4,7 @@
   "description": "",
   "main": " source/server.ts",
   "scripts": {
-    "start": "tsc && nodemon source/server.ts",
+    "start": "tsc && nodemon ./build/source/server.ts",
     "build": "tsc",
     "docs": "apidoc -i source/routes/ -o apidoc/"
   },
