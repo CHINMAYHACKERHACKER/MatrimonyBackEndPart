@@ -2,10 +2,10 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const MYSQL_HOST = process.env.MYSQL_HOST || '192.168.29.101';//'127.0.0.1'
-const MYSQL_DATABASE = process.env.MYSQL_DATABASE || 'matrimony';//'admin_matrimony'
-const MYSQL_USER = process.env.MYSQL_USER || 'root'; //'astroguru_user'
-const MYSQL_PASSWORD = process.env.MYSQL_PASSWORD || 'Native#2021' //'Ns@#2022'
+const MYSQL_HOST = process.env.MYSQL_HOST 
+const MYSQL_DATABASE = process.env.MYSQL_DATABASE 
+const MYSQL_USER = process.env.MYSQL_USER 
+const MYSQL_PASSWORD = process.env.MYSQL_PASSWORD
 
 const MYSQL = {
     host: MYSQL_HOST,
