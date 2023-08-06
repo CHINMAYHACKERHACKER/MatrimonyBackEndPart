@@ -58,13 +58,13 @@ const NAMESPACE = 'Server';
 const router = express();
 
 const corsOptions = {
-  origin: 'https://matrimony-theta.vercel.app',
+  origin: 'https://matrimony-6ymt.onrender.com',
 };
 
 router.use(cors());
 
 router.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://matrimony-theta.vercel.app');
+  res.setHeader('Access-Control-Allow-Origin', 'https://matrimony-6ymt.onrender.com');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
