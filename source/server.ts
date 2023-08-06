@@ -5,6 +5,7 @@ import logging from './config/logging';
 import config from './config/config';
 import sampleRoutes from './routes/sampleRoutes'
 const cors = require('cors');
+require('dotenv').config()
 
 //#region Admin
 import usersRoutes from './routes/admin/usersRoutes';
@@ -58,7 +59,7 @@ const NAMESPACE = 'Server';
 const router = express();
 
 const corsOptions = {
-  origin: 'https://matrimony-6ymt.onrender.com',
+  origin: process.env.FRONTEND_ACCESS_CROS 
 };
 
 router.use(cors());
