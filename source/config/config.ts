@@ -11,7 +11,8 @@ const MYSQL = {
     host: MYSQL_HOST,
     database: MYSQL_DATABASE,
     user: MYSQL_USER,
-    password: MYSQL_PASSWORD
+    password: MYSQL_PASSWORD,
+    connectTimeout: 60000
 };
 
 const SERVER_HOSTNAME = process.env.SERVER_HOSTNAME || 'localhost';
